@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookandroid.lockscreen">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TodayActivity" android:label="오늘의 공부"></activity>
+        <activity android:name=".ReviewActivity" android:label="복습"></activity>
+        <activity android:name=".ResultActivity" android:label="결과"></activity>
+        <activity android:name=".ReslutToday"></activity>
+        <activity android:name=".SetupAcivity" android:label="설정"></activity>
+        <activity android:name=".Review" android:label="일단 이게 복습"></activity>
+        <activity android:name=".LockActivity" android:label="잠금화면"></activity>
+        <activity android:name=".DataActivity"></activity>
+        <receiver android:name=".ScreenReceiver"></receiver>
+        <service android:name=".ScreenService"></service>
+
+
+    </application>
+
+</manifest>

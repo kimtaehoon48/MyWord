@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:text="결과"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="90dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="맞은 항목"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/listCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="틀린 항목"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/listWrong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

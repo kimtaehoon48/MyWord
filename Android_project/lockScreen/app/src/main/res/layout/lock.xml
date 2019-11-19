@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="단어 목록"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <ListView
+        android:id="@+id/listLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:layout_margin="20dp">
+
+    </ListView>
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:text="hey" />
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#f6f6f6">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="오늘의 공부, 복습 테스트"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="50dp"
+        android:text="오늘의 공부"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="50dp"
+        android:text="복습"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btnSetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="50dp"
+        android:text="설정"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="50dp"
+        android:text="sqlTest"
+        android:textSize="30dp"/>
+
+</LinearLayout>

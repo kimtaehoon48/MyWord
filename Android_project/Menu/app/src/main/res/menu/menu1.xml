@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/push"
+        android:title="푸시알림"
+        android:checkable="true"
+        android:checked="true"/>
+
+
+    <item
+        android:id="@+id/lockScreen"
+        android:title="잠금화면"
+        android:checkable="true"
+        android:checked="true"/>
+
+
+
+    <item
+        android:id="@+id/wordAdd"
+        android:title="단어 추가"
+        />
+
+
+</menu>

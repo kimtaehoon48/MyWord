@@ -1,0 +1,122 @@
+액티비티 메인.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="메뉴"/>
+
+</LinearLayout>
+
+
+///
+
+menu1.xml
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/push"
+        android:title="푸시알림"
+        android:checkable="true"
+        android:checked="true"/>
+
+
+    <item
+        android:id="@+id/lockScreen"
+        android:title="잠금화면"
+        android:checkable="true"
+        android:checked="true"/>
+
+
+
+    <item
+        android:id="@+id/wordAdd"
+        android:title="단어 추가"
+        />
+
+
+</menu>
+
+
+///
+
+
+메인 액티비티.java
+
+package com.example.menu;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Checkable;
+import android.widget.LinearLayout;
+
+public class MainActivity extends AppCompatActivity {
+    LinearLayout baseLayOut;
+    Menu menu;
+    MenuItem push, lockScreen;
+    Checkable checkable1;
+    Checkable checkable2;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        setTitle("메뉴");
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu1, menu);
+
+        this.menu = menu;
+
+        menu.getItem(0).setChecked(true);
+
+        return true;
+    }
+
+    @Override
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.push) {
+            item.setChecked(false);
+            return true;
+        }
+
+        if (id == R.id.lockScreen) {
+            item.setChecked(false);
+            return true;
+        }
+            return super.onOptionsItemSelected(item);
+    }
+}
+
+

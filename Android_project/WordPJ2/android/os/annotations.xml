@@ -1,0 +1,5 @@
+<root>
+    <item name='android.os.Build.VERSION_CODES JELLY_BEAN'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
